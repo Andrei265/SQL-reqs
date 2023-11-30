@@ -1,0 +1,1 @@
+SELECT students.fio_student AS Name, groups.group_number AS Group, faculties.name AS Faculty FROM students INNER JOIN groups ON students.group_id=groups.id INNER JOIN faculties ON groups.faculty_id=faculties.id;
