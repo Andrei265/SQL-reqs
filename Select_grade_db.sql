@@ -1,1 +1,2 @@
 SELECT students.fio_student AS Name, groups.group_number AS Group, faculties.name AS Faculty FROM students INNER JOIN groups ON students.group_id=groups.id INNER JOIN faculties ON groups.faculty_id=faculties.id;
+SELECT students.fio_student AS Name, exams.assessment AS Assessment, disciplines.name_discipline AS Discipline FROM students INNER JOIN exams ON students.id=exams.student_id INNER JOIN disciplines ON exams.discipline_id=disciplines.id;
